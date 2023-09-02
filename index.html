@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/neovis.js@2.0.2/dist/neovis.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="filter">
+<label>Filter :</label>
+<select id="korps">
+    <option value="">All</option>
+    <option value=":Korps{name: 'DNLS'}">DNLS</option>
+    <option value=":Korps{name: 'DOPS'}">DOPS</option>
+    <option value=":Korps{name: 'DNPS'}">DNPS</option>
+    <option value=":Korps{name: 'DNAC'}">DNAC</option>
+</select>
+</div>
+<div class="filter">
+<textarea id="cypher" cols="100" rows="4"></textarea>
+<button id="Btn" disabled>Execute Query</button>
+</div>
+
+<div id="viz"></div>
+<div id="viz2"></div>
+</body>
+</html>
