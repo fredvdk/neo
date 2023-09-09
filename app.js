@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get("/", (req, res) => {
+app.get("/neo", (req, res) => {
     //res.send("Welcome my app");
     res.sendFile("/index.html", {root: __dirname});
 })
